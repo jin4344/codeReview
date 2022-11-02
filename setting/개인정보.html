@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>개인정보 설정</title>
+        <link rel="stylesheet" href="개인정보.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="wrap">
+                <div id="photoBox">
+                    <!-- 백에서 사진 가져오는거에 따라 변경 -->
+                    <!-- js로 구현해햐 할듯 -->
+                    <img src="네이버로고1.png" alt="" id="photo" />
+                </div>
+                <!-- pw변경 페이지 필요 -->
+                <!-- 사진과 언어는 그냥 설정 변경으로 통합할까? -->
+                <div id="changeBox">
+                    <!-- 각 버튼은 누르면 저장버튼으로 변경됨,
+                         작업 완료후 저장 누르면 다시 변경으로 바뀜 -->
+                    <input type="button" value="PW 변경" class="buttonSet" />
+                    <input type="button" value="사진 변경" class="buttonSet" />
+                    <input type="button" value="언어 변경" class="buttonSet" />
+                </div>
+                <div id="languageBox">
+                    <table>
+                        <tr>
+                            <td rowspan="2">언어</td>
+                            <td>자신있는</td>
+                            <td>배우고있는</td>
+                            <td>경험없는</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option>자바</option>
+                                    <option>c/c++</option>
+                                    <option>html</option>
+                                    <option>python</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>자바</option>
+                                    <option>c/c++</option>
+                                    <option>html</option>
+                                    <option>python</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>자바</option>
+                                    <option>c/c++</option>
+                                    <option>html</option>
+                                    <option>python</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>관심있는<br />리뷰활동</td>
+                            <td colspan="3">
+                                <label>
+                                    리팩토링
+                                    <input type="checkbox" />
+                                </label>
+                                <label>
+                                    코드 리뷰
+                                    <input type="checkbox" />
+                                </label>
+                                <label>
+                                    팀 리뷰
+                                    <input type="checkbox" />
+                                </label>
+                                <!-- 수정 필요, 선택한 것들이 화면에 다 보이게 -->
+                                <!-- <select multiple>
+                                    <option>리팩토링</option>
+                                    <option>코드 리뷰</option>
+                                    <option>팀 리뷰</option>
+                                </select> -->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

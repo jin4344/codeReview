@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    /* 컨텐츠(form) 정렬, 가운데 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#wrap {
+    height: 80vh;
+    width: 100vh;
+
+    background-color: yellowgreen;
+}
+
+div {
+    /* display: block; */
+    /* 영역확인 */
+    /* border: 1px solid red; */
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    /* 사이즈 설정 */
+    width: 90%;
+    height: 90%;
+
+    /* 정렬 */
+    margin-left: 5%;
+    margin-top: 3%;
+
+    /* 글자 설정 */
+    text-align: center;
+    font-size: 1.5rem;
+
+    /* 배경(색) 설정 */
+    background-color: white;
+}
+
+select {
+    font-size: 1.5rem;
+}
+
+/* 사진의 고정적인 사이즈를 만들어 놓기 */
+#photo {
+    border-radius: 50%;
+    width: 50%;
+    height: 30vh;
+
+    margin: 3%;
+
+    /* 영역 확인 */
+    border: 1px solid pink;
+
+    background-color: white;
+}
+
+#changeBox {
+    /* display: inline-block; */
+    height: 6%;
+}
+
+.buttonSet {
+    width: 30%;
+    margin: 1%;
+}
+
+input {
+    display: inline-block;
+    margin: 0 auto;
+
+    font-size: 1.3rem;
+}
+
+#languageBox {
+    height: 40%;
+}
+
+label {
+    margin-left: 5%;
+}
