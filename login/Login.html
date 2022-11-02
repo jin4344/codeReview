@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>로그인페이지</title>
+        <link rel="stylesheet" href="Login.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- action은 나중에 수정 -->
+            <form action="/login" method="GET(post)">
+                <div id="inputBox">
+                    <input type="text" id="idBar" required placeholder="id" class="inputSet" />
+                    <input type="password" id="pwBar" required placeholder="pw" class="inputSet" />
+                </div>
+
+                <div id="buttonBox">
+                    <input type="button" value="로그인" class="buttonSet" />
+                    <input type="button" value="가입하기" class="buttonSet" />
+                    <input type="button" value="id / pw 찾기" class="buttonSet" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

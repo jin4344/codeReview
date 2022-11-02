@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    /* 컨텐츠(form) 정렬, 가운데 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    /* 태그 사이즈 설정 */
+    /* 창의 크기에 따라 면함 */
+    width: 80vh;
+    height: 30vh;
+
+    /* 영역 확인 */
+    /* border: 1px solid red; */
+    background-color: grey;
+}
+
+#inputBox {
+    /* 태그 간격 설정 */
+    margin: 1%;
+
+    /* 영역확인 */
+    border: 1px solid red;
+}
+
+input {
+    /* 정렬, 가운데 */
+    margin: 0 auto;
+
+    /* 컨텐츠 간격 */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    /* 글자 크기 설정,
+     이걸로 높이 설정 겸함 */
+    font-size: 1.5rem;
+}
+
+#buttonBox {
+    /* 사이즈 설정 */
+    width: 98%;
+
+    /* 정렬, 가운데 */
+    text-align: center;
+    margin: 1%;
+
+    /* 영역확인 */
+    border: 1px solid blue;
+}
+
+.inputSet {
+    /* 태그 정렬, 가운데 */
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    /* 태그 좌,우 사이즈 설정 */
+    width: 70%;
+}
+
+.buttonSet {
+    /* 태그 정렬, 가운데 */
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    /* 좌,우 사이즈 설정 */
+    width: 30%;
+
+    /* 배경(색) 설정 */
+    background-color: azure;
+}
