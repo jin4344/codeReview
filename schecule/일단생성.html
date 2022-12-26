@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <script type="text/javascript" src="./일단생성.js"></script>
+    </head>
+    <body>
+        <div class="date-wrap">
+            <div class="date-month">
+                <span id="month-this"></span>
+                <div class="button_wrap">
+                    <button type="button" id="month-prev" class="month-move" data-ym="2022-04-01"><</button>
+                    <button type="button" id="month-next" class="month-move" data-ym="2022-06-01">></button>
+                </div>
+            </div>
+            <table class="date-month">
+                <thead>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                </thead>
+                <!-- 달력 기본적인 틀 -->
+                <tbody id="tbl-month">
+                    <tr>
+                        <td class="sun"><a></a></td>
+                        <td class=""><a href="/news/schedule?date=2022-05-02">2</a></td>
+                        <td class=""><a></a></td>
+                        <td class=""><a></a></td>
+                        <td class=""><a></a></td>
+                        <td class=""><a></a></td>
+                        <td class="sat"><a></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
