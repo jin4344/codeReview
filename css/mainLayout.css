@@ -41,7 +41,7 @@ header > p {
 #bodyWrap,
 header,
 footer {
-    border: 1px solid red;
+    border: 1px solid rgb(93, 89, 89);
 }
 
 /* 작업용, 작은 영역 구분 설정 */
