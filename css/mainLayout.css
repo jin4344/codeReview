@@ -12,16 +12,26 @@ html {
 }
 /* 위는 기본 설정 */
 
+/* 로고 설정 */
 p {
     /* 로고 글자 설정 */
     font-size: 40px;
     display: inline;
 }
-
 img {
+    top: 1vh;
+    left: 2vw;
     /* 로고 크기 설정 */
     width: 80px;
     /* object-fit: cover; */
+}
+#logoBox > * {
+    left: 1vw;
+}
+/* 로고 박스 누르면 홈 가게 할려는데 왜 높이 조절이 안뫼;ㅇㄴ로미 ㄴ오롬냉ㄹ[머ㅠㅔㄴㅇㄹ */
+header #logoBox {
+    height: auto;
+    /* border: 10px solid black; */
 }
 
 /* 헤더 정렬 설정 */
@@ -32,16 +42,68 @@ header > p {
 
 /* 프로필 박스 설정 */
 #profileBox {
-    font-size: 40px;
-    margin-top: 2vh;
+    font-size: 30px;
+    margin-top: 3vh;
+    float: right;
+    right: 1vw;
+    background-color: rgb(97, 97, 97);
+    padding: 5px;
+}
+
+/* 밑 2개 순서 변경 시 visited 적용 안됨 */
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 네비, 바디 정렬 설정*/
+#bodyWrap {
+    width: 100%;
+    text-align: center;
+}
+
+/* 네비 안 p태그 설정 */
+#nav > p {
+    margin: 2vh;
+    font-size: 3vh;
+    display: block;
+}
+
+/* 네비 설정 */
+#nav {
+    border: 2px solid black;
+    margin: 1vh;
+    margin-top: 17vh;
+    position: fixed;
+    text-align: center;
+    background-color: rgb(130, 130, 130);
+}
+
+/* 헤더 설정 */
+header {
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    background-color: rgb(55, 191, 237);
+    z-index: 1;
+}
+
+/* 불러올 html 설정 */
+#bodys {
+    padding-top: 17vh;
+    width: 88vw;
     float: right;
 }
-/*  */
+
 /* 작업용, 큰 영역 구분 설정 */
 #bodyWrap,
 header,
 footer {
-    border: 1px solid rgb(93, 89, 89);
+    border: 1px solid red;
 }
 
 /* 작업용, 작은 영역 구분 설정 */
@@ -50,25 +112,4 @@ footer {
 nav,
 #bodys {
     border: 1px solid green;
-}
-
-/* 네비, 바디 정렬 설정*/
-#bodyWrap {
-    width: 100%;
-    text-align: center;
-    /* display: inline; */
-}
-
-/* 네비 안 p태그 설정 */
-#nav > p {
-    margin-top: 1vh;
-    font-size: 3vh;
-    display: block;
-}
-
-/* 네비 정렬, 크기 설정 */
-#nav {
-    border: 2px solid black;
-    margin: 1vh;
-    float: left;
 }

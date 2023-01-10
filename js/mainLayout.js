@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#bodys").load("test.html");
+    $("#bodys").load("프로필.html");
 });
 //
 // 네비게이션 바의 목록 클릭 시 바디에 불러올 html 바꾸기
