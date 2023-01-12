@@ -26,6 +26,7 @@ img {
     /* object-fit: cover; */
 }
 #logoBox > * {
+    min-height: 80px;
     left: 1vw;
 }
 /* 로고 박스 누르면 홈 가게 할려는데 왜 높이 조절이 안뫼;ㅇㄴ로미 ㄴ오롬냉ㄹ[머ㅠㅔㄴㅇㄹ */
@@ -60,33 +61,32 @@ a {
     color: white;
 }
 
-/* 네비, 바디 정렬 설정*/
-#bodyWrap {
+iframe {
+    float: right;
     width: 100%;
-    text-align: center;
+    height: 100%;
 }
 
-/* 네비 안 p태그 설정 */
-#nav > p {
-    margin: 2vh;
-    font-size: 3vh;
-    display: block;
-}
-/*  */
 /* 네비 설정 */
 #nav {
     border: 2px solid black;
+    min-width: 10vw;
     margin: 1vh;
     margin-top: 17vh;
     position: fixed;
     text-align: center;
     background-color: rgb(130, 130, 130);
 }
+#nav a {
+    margin: 2vh;
+    font-size: 3vh;
+    display: block;
+}
 
 /* 헤더 설정 */
 header {
     width: 100%;
-    height: 15vh;
+    min-height: 100px;
     position: fixed;
     background-color: rgb(55, 191, 237);
     z-index: 1;
@@ -96,7 +96,9 @@ header {
 #bodys {
     padding-top: 17vh;
     width: 88vw;
+    /* left: 13vw; */
     float: right;
+    height: 100%;
 }
 
 /* 작업용, 큰 영역 구분 설정 */
