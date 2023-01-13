@@ -46,7 +46,7 @@ const Chat = (function () {
         // $("div.chat").scrollTop($("div.chat").prop("scrollHeight"));
     }
 
-    // 여기 수정하기%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    // 여기 수정하기%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     // 메세지 전송
     function sendMessage(message) {
         // 서버에 전송하는 코드로 후에 대체

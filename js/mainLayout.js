@@ -6,6 +6,7 @@ $(document).onload(function () {
     document.getElementById("window").src = "프로필.html";
 });
 
+//
 // $("#toProfile").click(function () {
 //     $.ajax({
 //         url: "/test.html",
