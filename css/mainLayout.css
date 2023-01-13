@@ -96,12 +96,17 @@ header {
 #bodys {
     padding-top: 17vh;
     width: 88vw;
-    /* left: 13vw; */
     float: right;
     height: 100%;
 }
 
-/* 작업용, 큰 영역 구분 설정 */
+iframe {
+    float: left;
+    width: 99%;
+    height: 99%;
+}
+
+/* 작업용, 큰 영역 구분 설정
 #bodyWrap,
 header,
 footer {
@@ -109,9 +114,9 @@ footer {
 }
 
 /* 작업용, 작은 영역 구분 설정 */
-#logoBox,
+/* #logoBox,
 #profileBox,
 nav,
 #bodys {
     border: 1px solid green;
-}
+} */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- 웹 소켓 통신용 js, 이거 밑에 코드랑 순서 바뀌면 동작 안됨 -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/chatting.css" />
+        <script src="../js/chatting.js"></script>
+    </head>
+    <!-- 스크롤 기능은 살리면서 안 보이게 만들기, scrolling="yes" -->
+    <body scrolling="yes">
+        <div class="header">CHAT</div>
+        <div class="chat_wrap">
+            <div class="chat">
+                <ul>
+                    <!-- 동적 생성 -->
+                </ul>
+            </div>
+            <div class="input-div">
+                <input placeholder="Press Enter for send message." />
+            </div>
+
+            <!-- format -->
+
+            <div class="chat format">
+                <ul>
+                    <li>
+                        <div class="sender">
+                            <span></span>
+                        </div>
+                        <div class="message">
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

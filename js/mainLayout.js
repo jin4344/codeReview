@@ -1,7 +1,10 @@
-// $(document).ready(function () {
 //     // 로그인시 처음 띄워질 html로 바꿔 넣기
 //     $("#bodys").load("프로필.html");
 // });
+
+$(document).onload(function () {
+    document.getElementById("window").src = "프로필.html";
+});
 
 // $("#toProfile").click(function () {
 //     $.ajax({
