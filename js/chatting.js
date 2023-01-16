@@ -1,5 +1,5 @@
 const Chat = (function () {
-    // 나중에 사용자 이름 나오게
+    // 나중에 사용자 이름 나오게 바꾸기
     const myName = "blue";
 
     // init 함수
@@ -42,8 +42,9 @@ const Chat = (function () {
         $("div.chat:not(.format) ul").append(chatLi);
 
         // 스크롤바 아래 고정, 이거 왜 안됨??
-        $("div .chat").scrollTop($("div.chat").prop("scrollLow"));
-        // $("div.chat").scrollTop($("div.chat").prop("scrollHeight"));
+        $("body").scrollTop($("body").prop("scrollHeight"));
+        // $(".chat").scrollTop($("div.chat")[0].scrollLow);
+        // $(".chat").scrollTop = $("div.chat").scrollHeight;
     }
 
     // 여기 수정하기%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +55,6 @@ const Chat = (function () {
             senderName: "blue",
             message: message,
         };
-
         // 통신하는 기능이 없으므로 여기서 receive
         resive(data);
     }
@@ -74,6 +74,10 @@ const Chat = (function () {
         init: init,
     };
 })();
+
+// 새로고침해도 스크롤 유지하는 명령어
+// 이거 어디에 넣지?
+history.scrollRestoration = "auto";
 
 // 실행 함수
 $(function () {
