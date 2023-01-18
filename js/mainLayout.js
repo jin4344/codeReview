@@ -18,3 +18,4 @@ window.onload = function () {
     $("#profileBox").append("<p>" + /*서버에서 사용자 이름 가져오기*/ +"</p>");
     // }
 };
+//

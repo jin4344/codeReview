@@ -53,6 +53,7 @@ header > p {
     justify-items: center;
     vertical-align: center;
 }
+/*  */
 /* 로그인시 프로필박스에 보이게 될 것 */
 #profileBox img {
     /* 프로필 사진 */
