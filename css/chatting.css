@@ -8,7 +8,6 @@ body,
 html {
     width: 100%;
     height: 100%;
-    justify-content: flex-start;
 
     /* 스크롤 숨기기 */
     /* IE and Edge */
@@ -21,7 +20,20 @@ body::-webkit-scrollbar {
     display: none;
 }
 /* 기본 설정 */
-/*  */
+
+/* 채팅방 목록 설정 */
+.chatRoom {
+}
+
+.chatInRoom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    border: 1px solid red;
+    height: 100%;
+}
+
 /* 헤더 설정 */
 .header {
     font-size: 20px;
@@ -38,6 +50,9 @@ body::-webkit-scrollbar {
 .chat_wrap {
     top: 60px;
     width: 60%;
+
+    /* js로 채팅방 입장 시 yes로 변경 */
+    display: none;
 }
 
 .chat_wrap .chat {
@@ -90,15 +105,6 @@ ul li > div.message {
     /* border: none; */
     padding: 10px;
     left: -20%;
-}
-
-#chatRoom {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 40%;
-    border: 1px solid red;
-    height: 100%;
 }
 
 .format {
