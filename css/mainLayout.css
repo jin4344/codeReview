@@ -12,9 +12,7 @@ html {
 }
 /* 위는 기본 설정 */
 
-/* 로고 설정 */
 p {
-    /* 로고 글자 설정 */
     font-size: 40px;
     display: inline;
 }
@@ -102,7 +100,7 @@ a {
 #nav {
     border: 2px solid black;
     width: 11%;
-    height: 27%;
+    height: fit-content;
     margin-left: 1vh;
     margin-top: 120px;
     position: fixed;
@@ -110,9 +108,25 @@ a {
     background-color: rgb(130, 130, 130);
 }
 #nav a {
-    margin: 2vh;
-    font-size: 3vh;
+    margin-top: 1vh; /* 앵커 간격 */
+    /* color: rgb(55, 191, 237); 네비 글꼴 색 */
     display: block;
+}
+#nav > a > img {
+    width: 30%;
+    top: -0.5vh;
+    position: relative;
+}
+#nav > a > p {
+    width: 100%;
+    left: -0.3vw;
+    top: 1vh;
+    position: absolute;
+    font-size: 1.5vw;
+}
+#last {
+    /* 말풍선이 너무 커서 위에 걸리니 별도로 마진 부여 */
+    margin-top: 1vh;
 }
 
 /* 헤더 설정 */
