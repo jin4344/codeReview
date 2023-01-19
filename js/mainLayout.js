@@ -23,7 +23,7 @@ window.onload = function () {
         marginRight: "2vh",
     });
     $("#profileBox > a").remove();
-
+    //
     // 간단 프로필에 나올 메일함 설정
     const mailBox = document.createElement("div"); //메일함 wrap
     const profilePoto = document.createElement("img"); // 메일함 사진
