@@ -21,19 +21,6 @@ body::-webkit-scrollbar {
 }
 /* 기본 설정 */
 
-/* 채팅방 목록 설정 */
-.chatRoom {
-}
-
-.chatInRoom {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 40%;
-    border: 1px solid red;
-    height: 100%;
-}
-
 /* 헤더 설정 */
 .header {
     font-size: 20px;
@@ -45,14 +32,6 @@ body::-webkit-scrollbar {
     width: 100%;
     z-index: 1;
     top: -1px;
-}
-
-.chat_wrap {
-    top: 60px;
-    width: 60%;
-
-    /* js로 채팅방 입장 시 yes로 변경 */
-    display: none;
 }
 
 .chat_wrap .chat {
