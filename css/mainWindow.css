@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+/* 위는 기본 설정 */
+
+/* 각 구역의 라인 방식 설정 */
+div {
+    display: inline-block;
+}
+
+/* 커뮤니티 게시글 구역 */
+.commuList {
+    border: 2px solid black;
+    width: 68vw;
+    height: 40vh;
+    margin-top: 1%;
+}
+
+/* 공지란 구역 */
+.announcement {
+    border: 2px solid black;
+    width: 68vw;
+    height: 40vh;
+}
+
+/* 랭킹 구역 */
+.ranking {
+    border: 2px solid black;
+    float: right;
+    width: 30vw;
+    height: 81.5vh;
+}
